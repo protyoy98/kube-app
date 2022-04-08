@@ -18,7 +18,7 @@ spec:
         - name: vprodb
           image: vprofileprotyoy/vprofiledb:V1
           args:
-            - "ignore-db-directory=lost+found"
+            - "--ignore-db-directory=lost+found"
           volumeMounts:
             - mountPath: /var/lib/mysql
               name: vpro-db-data
